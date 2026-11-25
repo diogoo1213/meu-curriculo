@@ -1,0 +1,367 @@
+/* ========================================
+   RESET GERAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+/* ========================================
+   CORPO DO SITE
+======================================== */
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    line-height: 1.5;
+    color: white;
+
+    background-color: #101820;
+    background-image: url("background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ========================================
+   BANNER
+======================================== */
+
+.banner {
+    max-width: 1100px;
+    height: 225px;
+    margin: 0 auto;
+
+    background-image: url("banner.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #BF5FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 0 1rem;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-family: Impact, "Arial Black", sans-serif;
+    margin-bottom: 0.1rem;
+
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+}
+
+.banner-content p {
+    font-size: 2.1rem;
+
+    -webkit-text-stroke: 0.6px black;
+    text-shadow: 2px 2px black;
+}
+
+/* ========================================
+   MENU DE NAVEGAÇÃO
+======================================== */
+
+#menu {
+    background: #121212;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+
+    border-bottom: 2px solid #263238;
+}
+
+.nav-wrapper {
+    max-width: 1100px;
+    min-height: 65px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 10px;
+}
+
+.nav-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-wrapper ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-wrapper ul li a:hover {
+    color: #BF5FFF;
+}
+
+/* ========================================
+   IMAGEM CC
+======================================== */
+
+#cc {
+    width: 45px;
+    height: auto;
+    margin-left: 20px;
+    object-fit: contain;
+}
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========================================
+   SEÇÕES
+======================================== */
+
+.container {
+    width: 100%;
+    margin: 30px auto;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgba(18, 24, 32, 0.90);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* ========================================
+   TEXTOS
+======================================== */
+
+.text-side {
+    flex: 1;
+    min-width: 0;
+}
+
+.text-side h2 {
+    color: #BF5FFF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+    text-shadow: 2px 2px black;
+}
+
+.text-side h3 {
+    color: #BF5FFF;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    border-bottom: 1px solid rgba(191, 95, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+.text-side p {
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.text-side ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.text-side li {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.text-side strong {
+    color: #BF5FFF;
+}
+
+/* ========================================
+   IMAGENS DAS SEÇÕES
+======================================== */
+
+.mal {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mal img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+
+    object-fit: contain;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: #BF5FFF;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    width: 100%;
+    background-color: #121212;
+
+    margin-top: 40px;
+    padding: 20px;
+
+    border-top: 2px solid #263238;
+}
+
+.foot {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    color: #cccccc;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ========================================
+   RESPONSIVIDADE - TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .mal {
+        flex: 0 0 30%;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+
+}
+
+/* ========================================
+   RESPONSIVIDADE - CELULARES
+======================================== */
+
+@media (max-width: 600px) {
+
+    .banner {
+        height: 180px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .banner-content p {
+        font-size: 1.5rem;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-wrapper ul {
+        gap: 15px;
+    }
+
+    .nav-wrapper ul li a {
+        font-size: 15px;
+    }
+
+    #cc {
+        margin-left: 0;
+        width: 40px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .text-side {
+        width: 100%;
+    }
+
+    .text-side h2 {
+        font-size: 1.7rem;
+    }
+
+    .text-side h3 {
+        font-size: 1.2rem;
+    }
+
+    .text-side p {
+        font-size: 0.95rem;
+    }
+
+    .mal {
+        width: 100%;
+        flex: none;
+    }
+
+    .mal img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .foot {
+        font-size: 12px;
+    }
+
+}
